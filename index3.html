@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    html,body{
+        width: 100%;
+        height:98.5%;;
+    }
+
+    #div1{
+        background-color: #0c8203;
+        width: 100%;
+        height: 20%;
+        overflow: hidden;
+    }
+    #hd1{
+        width: 100%;
+        height: 70%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        overflow: hidden;
+    }
+    #div2{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    button{
+        padding: 10px 20px;
+        background-color: transparent;
+        border:none;
+        color: white;
+        cursor: pointer;
+        margin: 0 10px;
+        overflow: hidden;
+    }
+    button:hover{
+        background-color: #e2ece1;
+        color: green;
+        border-radius: 14cap;
+        overflow: hidden;
+    }
+    #div3{
+        width: 100%;
+        height: 72%;
+        display: grid;
+        justify-content:space-around;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        margin-top:32px;
+        overflow: hidden;
+    }
+    #div3 > #pdiv1, #pdiv2, #pdiv3{
+        width: 80%;
+        height: 68%;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
+        padding: 24px;
+        border: 1px solid transparent;
+        box-shadow: 3px 3px 10px rgb(99, 98, 98);
+        border-radius: 1%;
+        margin-left: 10%;
+        overflow: hidden;
+    }
+     h2{
+        
+        color: #0c8203;
+        overflow: hidden;
+    }
+    p{
+        display: flex;
+        justify-self: center;
+        margin-top: 10px;
+        margin-left: 2px;
+        overflow: hidden;
+    }
+    footer{
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 14px;
+        overflow: hidden;
+    }
+    a{
+        color: #41b738; 
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div id="div1">
+        <h1 id="hd1">Welcome to Your Website Task</h1>
+        <div id="div2">
+            <button>Home</button>
+            <button>About</button>
+            <button>Contact</button>
+        </div>
+    </div>
+    <div id="div3">
+        <div id="pdiv1"><h2 class="ph1">About CSS</h1><p>Cascading Style Sheets(CSS) allow you to style and layout your web<br>Page, adding colors, spacing and more.</p></div>
+        <div id="pdiv2"><h2 class="ph2">Box Model</h1><p>The CSS box model describes the rectangular box generated for<br>elements it includes margins, borders, padding, and the actual content.</p></div>
+        <div id="pdiv3"><h2 class="ph2">Responsive Design</h1><p>Responsive design ensures your webpage looks great on any device.<br>
+        from desktops to mobile phones</p></div>
+    </div>
+    <footer>Created by Ojaswi Bhardwaj | Follow us on <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a></footer>
+</body>
+</html>
